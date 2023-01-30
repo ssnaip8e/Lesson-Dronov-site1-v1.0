@@ -1,0 +1,260 @@
+@font-face {
+   font-family: "Caviar Dreams";
+   src: url(fonts/CaviarDreams.ttf);
+}
+@font-face {
+   font-family: "Caviar Dreams";
+   src: url(fonts/Caviar_Dreams_Bold.ttf);
+   font-weight: bold;
+}
+@font-face {
+   font-family: "Caviar Dreams";
+   src: url(fonts/CaviarDreams_Italic.ttf);
+   font-style: italic;
+}
+@font-face {
+   font-family: "Caviar Dreams";
+   src: url(fonts/CaviarDreams_BoldItalic.ttf);
+   font-weight: bold;
+   font-style: italic;
+}
+
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: bisque;
+   margin: 0px;
+}
+header, nav, main, footer {
+   position: fixed;
+}
+header {
+   background-color: white;
+   height: 80pt;
+   left: 0pt;
+   top: 0pt;
+   right: 0pt;
+}
+.pos1, .pos2, .pos3, .pos4 {
+   position: absolute;
+}
+.pos1 {
+   left: 0pt;
+   top: 0pt;
+   width: 140pt;
+}
+.pos2 {
+   left: 140pt;
+   top: 29pt;
+   right: 0pt;
+}
+.pos2 h1 {
+   font: bold italic 42pt Verdana;
+   text-transform: uppercase;
+   text-align: right;
+   letter-spacing: 10pt;
+   margin: 0px;
+   background-color: darksalmon;
+}
+.pos3 {
+   left: 140pt;
+   top: 4pt;
+   right: 70pt;
+}
+.pos3 h1 {
+   font: bold 24pt Verdana;
+   text-transform: uppercase;
+   text-align: right;
+   letter-spacing: 6pt;
+   margin: 0px;
+   color: darksalmon;
+}
+.pos1 img {
+   height: 80pt;
+}
+nav {
+   width: 150px;
+   padding: 10px;
+   left: 0pt;
+   top: 100pt;
+   bottom: 120pt;
+   background-color: bisque;
+}
+nav a {
+   display: block;
+}
+nav div, nav a {
+   font-size: 20pt;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+nav a:link, nav a:visited {
+   color: darkred;
+   text-decoration: none;
+}
+nav a:active, nav a:hover {
+   color: darksalmon;
+   text-decoration: none;
+}
+main {
+   text-align: justify;
+   left: 190pt;
+   top: 100pt;
+   right: 0pt;
+   bottom: 120pt;
+   background-image: repeating-linear-gradient(to right, white 0px, biskue 5x, white 10px);
+   overflow: auto;
+   padding-left: 10px;
+}
+ol {
+   list-style-type: upper-roman;
+}
+.advertising {
+   margin-left: 30pt;
+}
+.advertising div {
+   font-size: 12pt;
+   margin-top: 5pt;
+   margin-bottom: 5pt;
+}
+.bigger {
+   font-size: 16pt;
+}
+footer {
+   text-align: right;
+   background-color: white;
+   height: 120pt;
+   left: 0pt;
+   right: 0pt;
+   bottom: 0pt;
+}
+.pos4 {
+   top: 0pt;
+   right: 20pt;
+}
+footer p {
+   font-size: 12pt;
+}
+footer a {
+   display: block;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 600;
+   text-align: center;
+   background-color: yellow;
+   padding: 16pt;
+   position: absolute;
+   top: 50pt;
+   left: 40pt;
+}
+
+
+table.pricelist th, 
+table.pricelist td {
+   border: grey thin solid;
+   padding: 4px;
+}
+table.pricelist th {
+   text-align: center;
+}
+table.pricelist thead th {
+   color: white;
+   background-color: grey;
+}
+table.pricelist tfoot td {
+   text-align: right;
+   font-style: italic;
+}
+table.pricelist td:last-child:not(:only-child) {
+   border: none;
+   background-color: lightgrey;
+}
+
+
+table.catalog h3 {
+   font-family: "Caviar Dreams";
+   font-size: 20pt;
+   font-variant: small-caps;
+   letter-spacing: 2pt;
+}
+table.catalog p::first-letter {
+   vertical-align: text-top;
+}
+table.catalog h3::after {
+   content: ":";
+}
+table.catalog {
+   border-collapse: collapse;
+   width: 70%;
+   min-width: 12sm;
+}
+table.catalog tr:first-child td {
+   border-top: none;
+   width: 50%;
+}
+table.catalog tr:last-child td {
+   border-bottom: none;
+}
+/* table.catalog tr {
+   
+} */
+table.catalog td {
+   border-top: black thin dotted;
+   border-bottom: black thin dotted;
+   padding: 10px;
+}
+table.catalog img {
+   width: 100%;
+}
+table.catalog td p:first-of-type::first-letter {
+   font-size: 24pt;
+}
+
+
+form {
+   width: 400px;
+   padding: 0 10px;
+   border: thin dotted darkgrey;
+   border-radius: 5px;
+}
+input, select {
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 14pt;
+   padding: 5pt;
+   border: double medium black;
+   border-radius: 5px;
+}
+input[type=submit] {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 20pt;
+   font-weight: bold;
+   text-transform: uppercase;
+   width: 250px;
+   border: solid black thick;
+   border-radius: 0px;
+}
+input:focus {background-color: yellow;}
+input:valid {border-color: green;}
+input:invalid {
+    background-color: red;
+    border-color: red;
+}
+input[type=image] {
+   border-style: none;
+}
+
+
+div#tablecont {
+   display: table;
+   width: 100%;
+   border-collapse: collapse;
+}
+div#tablecont > div {
+   display: table-row;
+}
+div#tablecont > div > * {
+   display: table-cell;
+   vertical-align: top;
+}
+
+
+

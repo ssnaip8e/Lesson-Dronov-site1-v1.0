@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Суши-бар Йокогама, сашими, суши, роллы, напитки">
+   <meta name="keywords" content="суши-бар, Йокогама, сашими, суши, ролл">
+   <meta name="author" content="Читатель">
+   <meta name="generator" content="Блокнот">
+   <title>Йокогама: суши-бар</title>
+   <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+   <header>
+      <div class="pos1">
+         <img src="../images/sushi.jpg" alt="Суши">
+      </div>
+      <div class="pos2">
+         <h1>Йокогама</h1>
+      </div>
+      <div class="pos3">
+         <h1>Суши-бар</h1>
+      </div>
+   </header>
+   <!-- <nav>
+      <div>
+         <a href="../index.html">Главная</a>
+      </div>
+      <div>
+         <a href="sashimi.html">Сашими</a>
+      </div>
+      <div>
+         <a href="sushi.html">Суши</a>
+      </div>
+      <div>
+         <a href="rolls.html">Роллы</a>
+      </div>
+      <div>
+         <a href="pricelist.html">Прайс-лист</a>
+      </div>
+   </nav> -->
+   <main>
+      <h2>Заказ еды на вынос</h2>
+      <form action="mailto:order@yokogama.ru" method="post" enctype="text/plain">
+         <p><label for="dishes">Что желаете заказать?</label><br>
+            <select name="dishes" id="dishes" size="6" multiple>
+               <optgroup label="Сашими">
+                  <option value="unagi">Унаги</option>
+                  <option value="hamachi">Хамачи</option>
+               </optgroup>
+               <optgroup label="Суши">
+                  <option value="chukka">Чукка</option>
+                  <option value="maguro">Магуро</option>
+                  <option value="tobiko">Тобико</option>
+               </optgroup>
+               <optgroup label="Роллы">
+                  <option value="kunsey batakon">Кунсэй батакон</option>
+                  <option value="arigato">Аригато</option>
+                  <option value="mexico">Мексиканский</option>
+               </optgroup>
+            </select>
+         </p>
+         <p>
+            <label for="phone">По какому телефону Вам перезвонить?</label><br>
+            <input type="text" name="phone" id="phone" value="80447962428" required>
+         </p>
+         <p><input type="submit" value="Отправить"></p>
+      </form>
+   </main>
+   <footer>
+      <a href="pages/order.html">Закажите столик</a>
+      <div class="pos4">
+         <p class="greeting">Ждем вас!</p>
+         <address>Наш адрес: ул.Зеленая, 17.</address>
+         <p>&copy; Читатели книги &laquo;HTML и CSS&raquo;.<br>
+         Все права защищены.</p>
+      </div>
+   </footer>
+</body>
+</html>

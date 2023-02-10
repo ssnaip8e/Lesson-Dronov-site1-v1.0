@@ -1,4 +1,4 @@
-# Lesson-Dronov-site1-v1.0
+# Lesson-Dronov-site1
 
 Создание сайта по книге Дронова "HTML и CSS".  
 Сайт-пример "Суши-бар Йокогама".
